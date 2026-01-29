@@ -41,3 +41,25 @@ Criar solução completa em camadas (DB, EJB, Backend, Frontend), corrigindo bug
 - Testes (15%)
 - Documentação (10%)
 - Frontend (10%)
+
+## Tecnologias
+- Java 17
+- Spring Boot
+- EJB
+- Angular
+- H2/Postgres banco em memoria jdbc:h2:mem:testdb
+
+## Como rodar
+1. mvn clean install
+2. mvn spring-boot:run
+3. cd frontend && npm start
+
+## Arquitetura
+- DB
+- EJB
+- Backend
+- Frontend
+
+## Decisões técnicas
+- Pessimistic Lock para evitar lost update
+- Rollback automático via EJB

@@ -1,0 +1,12 @@
+<h2>Transferência</h2>
+
+<label>Origem</label>
+<input type="number" [(ngModel)]="dto.origemId">
+
+<label>Destino</label>
+<input type="number" [(ngModel)]="dto.destinoId">
+
+<label>Valor</label>
+<input type="number" [(ngModel)]="dto.valor">
+
+<button (click)="transferir()">Transferir</button>

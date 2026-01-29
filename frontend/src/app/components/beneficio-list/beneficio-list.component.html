@@ -1,0 +1,15 @@
+<h2>Benefícios</h2>
+
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>Nome</th>
+    <th>Valor</th>
+  </tr>
+
+  <tr *ngFor="let b of beneficios">
+    <td>{{ b.id }}</td>
+    <td>{{ b.nome }}</td>
+    <td>{{ b.valor }}</td>
+  </tr>
+</table>
