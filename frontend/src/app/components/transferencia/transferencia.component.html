@@ -1,12 +1,29 @@
-<h2>Transferência</h2>
+ <!-- FORM -->
+  <mat-card class="card">
+    <mat-card-title>🔄 Transferência</mat-card-title>
 
-<label>Origem</label>
-<input type="number" [(ngModel)]="dto.origemId">
+    <div class="form">
 
-<label>Destino</label>
-<input type="number" [(ngModel)]="dto.destinoId">
+      <mat-form-field appearance="outline">
+        <mat-label>Origem</mat-label>
+        <mat-select>
+          <mat-option>Conta de origem</mat-option>
+        </mat-select>
+      </mat-form-field>
 
-<label>Valor</label>
-<input type="number" [(ngModel)]="dto.valor">
+      <mat-form-field appearance="outline">
+        <mat-label>Destino</mat-label>
+        <input matInput placeholder="Conta de destino">
+      </mat-form-field>
 
-<button (click)="transferir()">Transferir</button>
+      <mat-form-field appearance="outline">
+        <mat-label>Valor</mat-label>
+        <input matInput placeholder="R$ 0,00">
+      </mat-form-field>
+
+      <button mat-raised-button color="primary">
+        Transferir
+      </button>
+
+    </div>
+  </mat-card>
